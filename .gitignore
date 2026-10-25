@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.databricks/
+.databrickscfg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Spark / local warehouse leftovers
+metastore_db/
+spark-warehouse/
+derby.log
+*.log
+
+# Local DuckDB files from the SQL sanity check
+*.duckdb
+*.duckdb.wal
+
+# Real or exported data. Synthetic samples named sample_*.csv stay in git.
+*.csv
+*.tsv
+*.parquet
+*.orc
+*.avro
+*.jsonl
+*.xlsx
+*.xls
+data/raw/
+data/private/
+**/real_*/
+!**/data/sample_*.csv
